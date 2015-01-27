@@ -1,0 +1,122 @@
+html {
+	@media #{$information-phone} {
+		font-size: 8px;
+	}
+}
+
+body {
+	@extend .container-fluid;
+	background: $background;
+	font-family: 'Raleway', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	background: white;
+}
+
+.header {
+	.logo {
+		@include box-sizing(border-box);
+		text-align:center;
+		img {
+			height: 250px;
+			padding: 50px;
+			@media #{$information-phone} {
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+	.nav {
+		font-size: 1.6rem;
+		ul {
+			padding: 0;
+			li {
+				background: $primary;
+				display: inline-block;
+				width: 14.285%;
+				a {
+					display: inline-block;
+					width: 100%;
+					padding: 25px 0;
+					border-left: 1px solid white;
+					color: white;
+					text-align: center;
+					text-transform: uppercase;
+					transition: 0.3s all;
+					text-decoration: none !important;
+					&:hover {
+						background: $secondary;
+					}
+				}
+			}
+		}
+	}
+
+	&.clone {
+		img {
+			height: 80px;
+			padding: 10px;
+		}
+		.nav {
+			font-size: 1.3rem;
+			top: 80px;
+			ul {
+				li {
+					a {
+						padding: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.secondary-nav {
+	font-size: 1.7rem;
+	float: right;
+	ul {
+		margin: 20px;
+		margin-right: 0;
+		padding: 0;
+		li {
+			display: block;
+			a {
+				display: block;
+				color: white;
+				background: $secondary;
+				padding: 5px 10px;
+				margin-right: 1px;
+				border-bottom: 1px solid white;
+				transition: 0.3s all;
+				text-align: right;
+				&:hover {
+					text-decoration: none;
+					background: $primary;
+				}
+			}
+			&.active a {
+				background: $primary;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.content .container {
+	font-size: 1.7rem;
+	padding-bottom: 30px;
+}
+
+.footer .container {
+	padding: 20px;
+	background: $primary;
+	color: white;
+	.contact {
+		font-size: 1.4rem;
+	}
+}

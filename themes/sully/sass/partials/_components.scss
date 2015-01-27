@@ -1,0 +1,20 @@
+.sully-button  {
+	padding: 10px 15px;
+	background: $secondary;
+	color: white !important;
+	text-decoration: none !important;
+	padding-right: 30px;
+	background-image: url('../images/ui/arrow-right.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	transition: 0.3s all;
+	&:hover {
+		background-color: $primary;
+	}
+}
+
+.separator .container {
+	background: $secondary;
+	padding: 0 !important;
+	height: 5px;
+}
