@@ -1,4 +1,4 @@
-#Redesign of Sully Group official website
+# Redesign of Sully Group official website
 
 Draft of the redesign of the [official website](http://www.sully-group.fr) of Sully Group.
 
