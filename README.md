@@ -1,27 +1,28 @@
-#Redesign du site officiel de Sully Group
+#Redesign of Sully Group official website
 
-Travail sur le redesign [du site officiel](http://www.sully-group.fr) de Sully Group.
+Draft of the redesign of the [official website](http://www.sully-group.fr) of Sully Group.
 
-Le site repose sur le micro-CMS [Pico](https://github.com/picocms/Pico).
+The website is based on [Pico micro-CMS](https://github.com/picocms/Pico).
 
-Uniquement la page d'accueil a été réalisée pour l'instant.
+Only the index page has been made for now.
 
-Cette démonstration est accessible à cette adresse : [sully.bini.io](http://sully.bini.io).
+This demo is available at this URL : [sully.bini.io](http://sully.bini.io).
 
-## Prérequis
-Afin d'installer sur votre machine cette démonstration, assurez-vous d'avoir installé [compass](http://compass-style.org/), [Bower](http://bower.io/), [Composer](https://getcomposer.org/) et [php](http://php.net/).
+## Prerequisite
+To install this demo on your computer, be sure that you have installed [compass](http://compass-style.org/), [Bower](http://bower.io/), [Composer](https://getcomposer.org/), and [php](http://php.net/).
 
 ## Installation
-Téléchargez les sources et exécutez la commande suivante depuis le répertoire racine de celles-ci :
+Download the sources and run the following command from the project root directory :
+
 ```
 composer install
 ```
 
-Exécutez ensuite les commandes suivantes depuis le répertoire `/themes/sully`.
+Then, run the following command from `/themes/sully` directory.
 
 ```
 bower install
 compass compile
 ```
 
-Placez les sources dans un répertoire rendu accessible via un serveur comme [Apache](https://httpd.apache.org/) ou [nginx](http://nginx.org/) avec le module php installé et activé.
+Put the sources in a directory accessible by a web server like [Apache](https://httpd.apache.org/) ou [nginx](http://nginx.org/) with php module activated.
